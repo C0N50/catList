@@ -11,9 +11,9 @@ function onReady () {
 // State
 
 let cats = [
-    {name : 'Xiu Xiu', color : 'brown', age : 4, tabi : true},
-    {name : 'Paladin', color : 'brown', age : 4, tabi : true},
-    {name : 'Zeke',    color : 'brown', age : 30, tabi : true},
+    {name : 'Xiu Xiu', color : 'Brown', age : 4, tabi : true},
+    {name : 'Paladin', color : 'Brown', age : 4, tabi : true},
+    {name : 'Zeke',    color : 'Brown', age : 30, tabi : true},
     {name : 'Cheese',  color : 'Marmalade', age : 19, tabi : true},
     {name : 'Umbreon',  color : 'Black', age : 23, tabi : false},
 ];
@@ -37,7 +37,22 @@ function render() {
 function onAddCat(evt) {
     evt.preventDefault();
     console.log('In onAddCat');
+
+    let cat = {
+        name : $('#nameInput').val(),
+        color : $('#colorInput').val(),
+        age : Number($('#ageInput').val()),
+        tabi : $('#tabiInput').is(":checked")
+    }
+    
+    cats.push(cat);
+    console.log(cats);
+
+    $('#cat-table').empty();
+    render();
 }
+
+
 
 
 
