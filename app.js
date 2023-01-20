@@ -35,7 +35,7 @@ function render() {
                 <td>${cat.color}</td> 
                 <td>${cat.age}</td> 
                 <td>${cat.tabi}</td>
-                <td> <button class='deleteCatBtn'> Delete Cat 😿 </button> </td>
+                <td> <button class='deleteCatBtn'> Release Cat 😿 </button> </td>
             </tr>`);
     }
 }
