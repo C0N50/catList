@@ -12,8 +12,8 @@ let cats = [
     {name : 'Xiu Xiu', color : 'brown', age : 4, tabi : true},
     {name : 'Paladin', color : 'brown', age : 4, tabi : true},
     {name : 'Zeke',    color : 'brown', age : 30, tabi : true},
-    {name : 'Cheese',  color : 'Marmalade', age : 24, tabi : true},
-    {name : 'Umbreon',  color : 'Black', age : 5, tabi : false},
+    {name : 'Cheese',  color : 'Marmalade', age : 19, tabi : true},
+    {name : 'Umbreon',  color : 'Black', age : 23, tabi : false},
 ];
 
 
