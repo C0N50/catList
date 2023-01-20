@@ -4,6 +4,8 @@ function onReady () {
    // hello();
    // setInterval(hello, 10000);
    render();
+
+   $('#addCatForm').on('submit', onAddCat);
 }
 
 // State
@@ -29,6 +31,12 @@ function render() {
                 <td>${cat.tabi}</td>
             </tr>`);
     }
+}
+
+
+function onAddCat(evt) {
+    evt.preventDefault();
+    console.log('In onAddCat');
 }
 
 
